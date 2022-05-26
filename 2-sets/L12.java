@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class L1 {
+public class L12 {
     public static void main(String[] args) {
         Set<String> set = new HashSet<>();
 

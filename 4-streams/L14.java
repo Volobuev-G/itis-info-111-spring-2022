@@ -1,6 +1,5 @@
 import java.util.*;
 import java.util.function.*;
-import java.util.stream.*;
 
 class Mod2 implements Predicate<Integer> {
     public boolean test(Integer x) {
@@ -29,7 +28,7 @@ class Out implements Consumer<Integer> {
     }
 }
 
-public class L1 {
+public class L14 {
     static void task2(List<Integer> list) {
         list.stream()
             .filter(new Mod2())

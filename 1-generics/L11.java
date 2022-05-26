@@ -1,6 +1,3 @@
-import java.io.*;
-import java.util.*;
-
 // Подумайте:
 // - что может пойти не так?
 // - где программист, использующий этот
@@ -27,7 +24,7 @@ class Pair<U,V> {
     public void setSecond(V second) { this.second = second; }
 }
 
-public class L1 {
+public class L11 {
     public static void main(String[] args) {
         // Входной массив
         Integer[] a = {1,2,3,4,5,4,3,2,1};

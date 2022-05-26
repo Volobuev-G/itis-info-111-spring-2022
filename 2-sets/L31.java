@@ -9,7 +9,7 @@ import java.util.*;
 
  */
 
-public class L3 {
+public class L31 {
     public static void main(String[] args) {
         NavigableSet<String> set = new TreeSet<>();
 

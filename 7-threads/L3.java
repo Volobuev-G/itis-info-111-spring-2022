@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.stream.Collectors;
 
 class MyThread extends Thread {
     private int x;
@@ -13,13 +14,15 @@ class MyThread extends Thread {
         try {
             Thread.sleep(x*300);
         } catch (InterruptedException e) {}
-        res.add(x);
+        synchronized (res) {
+            res.add(x);
+        }
     }
 }
 
 public class L3 {
     public static List<Integer> timeSort(int[] a) {
-        List<Integer> l = new LinkedList<>();
+        List<Integer> l = Collections.synchronizedList();
         MyThread[] ts = new MyThread[a.length];
         for (int i=0; i<a.length; i++) {
             ts[i] = new MyThread(a[i],l);

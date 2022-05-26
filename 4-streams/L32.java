@@ -1,8 +1,6 @@
 import java.util.*;
-import java.util.function.*;
-import java.util.stream.*;
 
-public class L3 {
+public class L32 {
     static void task2(List<Integer> list) {
         list.stream()
             .filter((Integer x) -> {return x % 2 == 0;})

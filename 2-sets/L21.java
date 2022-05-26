@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class L2 {
+public class L21 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

@@ -38,7 +38,7 @@ class Bank {
     }
 }
 
-public class L1 {
+public class L13 {
     public static void main(String[] args) {
         Bank bank = new Bank();
         bank.deposit("Alice", 1000, "USD");
