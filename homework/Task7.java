@@ -19,7 +19,7 @@ public class Task7 {
     public static Map<Integer, List<Integer>> divisible(int n, List<Integer> numbers) {
         Map<Integer,List<Integer>> map = new HashMap<>();
         List<Integer> list = new ArrayList<>();
-        for (int i = 0;i < n;i++) {
+        /*for (int i = 0;i < n;i++) {
             for (int k = 0;k < numbers.size();k++) {
                 if (numbers.get(k) % n == i) {
                     list.add(k);
@@ -27,8 +27,8 @@ public class Task7 {
             }
             map.put(i,list);
             list.clear();
-        }
+        }*/
+        //numbers.stream().collect(Collectors.toMap((x -> Integer.valueOf(x.toString())),1));
         return map;
-
     }
 }

@@ -1,7 +1,7 @@
 
-class MyThread extends Thread {
+class MyThread1 extends Thread {
     private int x;
-    public MyThread(int x) {
+    public MyThread1(int x) {
         this.x = x;
     }
 
@@ -14,10 +14,10 @@ class MyThread extends Thread {
     }
 }
 
-public class L1 {
+public class L15 {
     public static void timeSort(int[] a) {
         for (int x : a) {
-            MyThread t = new MyThread(x);
+            MyThread1 t = new MyThread1(x);
             t.start();
         }
     }

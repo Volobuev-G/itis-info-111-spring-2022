@@ -1,5 +1,5 @@
 
-public class L2 {
+public class L23 {
     public static void timeSort(int[] a) {
         for (int x : a) {
             new Thread(() -> {

@@ -20,7 +20,7 @@ class MyThread extends Thread {
     }
 }
 
-public class L3 {
+/*public class L3 {
     public static List<Integer> timeSort(int[] a) {
         List<Integer> l = Collections.synchronizedList();
         MyThread[] ts = new MyThread[a.length];
@@ -45,4 +45,4 @@ public class L3 {
         System.out.println(l.get(0) + " " + l.get(1));
         System.out.println(l.size());
     }
-}
+} */

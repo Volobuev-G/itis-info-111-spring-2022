@@ -26,19 +26,35 @@ public class Task8 {
         tablePrint(list,wordsLength,n,m);
     }
     public static void tablePrint(List<String> list,List<Integer> wordsLength,int n,int m) {
-        for (int i = 0;i < n + 1;i++) {
-            for (int j = 0;j < m + 1;j++) {
-                System.out.print("+");
-                System.out.print(repeatChar('-',wordsLength.get(j)));
+        int k = 0;
+        for (int i = 0;i < n;i++) {
+            charString(m,wordsLength);
+            for (int j = 0;j < m;j++) {
+                System.out.print("|");
+                if (list.get(k).length() == wordsLength.get(j)) {
+                    System.out.print(list.get(k));
+                } else {
+                    System.out.print(list.get(k));
+                    int a = list.get(k).length();
+                    while (a < wordsLength.get(j)) {
+                        System.out.print(" ");
+                        a++;
+                    }
+                }
+                k++;
             }
-            System.out.print("+");
+            System.out.print("|");
             System.out.println();
-            System.out.print('|' + list.get(i) + '|');
         }
-
+        charString(m,wordsLength);
     }
-    public static void tablePrintChars() {
-        System.out.println("^\\+\\-(5)");
+
+    public static void charString(int m, List<Integer> wordsLength) {
+        for (int j = 0;j < m;j++) {
+            System.out.print("+");
+            System.out.print(repeatChar('-',wordsLength.get(j)));
+        }
+        System.out.println("+");
     }
     public static String repeatChar(char c, int length) {
         char[] data = new char[length];
